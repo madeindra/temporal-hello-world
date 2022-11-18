@@ -1,5 +1,16 @@
 # Hello World with Temporal
 
+## What is Temporal?
+
+Temporal is ...
+
+## What are the parts of Temporal?
+
+* Workflow
+* Activity
+* Worker
+* Initiator
+
 ## Requirements
 * Docker
 * Docker Compose
