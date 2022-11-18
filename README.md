@@ -2,14 +2,14 @@
 
 ## What is Temporal?
 
-Temporal is ...
+Temporal is workflow orchestrator, it ensures success in code execution, it helps for non-deterministic algorithm.
 
 ## What are the parts of Temporal?
 
-* Workflow
-* Activity
-* Worker
-* Initiator
+* Workflow: Activity wrapper to be able to run in Temporal
+* Activity: Use cases or logic that want to be executed
+* Worker: Workflow runner / retyer / scheduler
+* Initiator (start): Trigger workflow execution
 
 ## Requirements
 * Docker
@@ -42,3 +42,13 @@ git clone https://github.com/temporalio/sdk-go.git
 ```
 
 ## Run Application
+
+1. Start the worker
+```
+go run worker/main.go
+```
+
+2. Start the initiator
+```
+go run start/main.go
+```
