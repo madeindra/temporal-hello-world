@@ -52,3 +52,7 @@ go run worker/main.go
 ```
 go run start/main.go
 ```
+
+## References
+
+This project is created based on tutorial on [Temporal](https://learn.temporal.io/getting_started/go/hello_world_in_go/).
