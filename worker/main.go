@@ -21,6 +21,7 @@ func main() {
 	w := worker.New(c, app.GreetingTaskQueue, worker.Options{})
 
 	// register workflow and activity to worker
+	w.RegisterWorkflow(app.GreetingWorkflowFuture)
 	w.RegisterWorkflow(app.GreetingWorkflow)
 	w.RegisterActivity(app.ComposeGreeting)
 

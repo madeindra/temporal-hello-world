@@ -19,13 +19,13 @@ func main() {
 
 	// create workflow options
 	options := client.StartWorkflowOptions{
-		ID:        "greeting-workflow",
+		ID:        "username-123",
 		TaskQueue: app.GreetingTaskQueue,
 	}
 
 	// start workflow
 	name := "World"
-	wf, err := c.ExecuteWorkflow(context.Background(), options, app.GreetingWorkflow, name)
+	wf, err := c.ExecuteWorkflow(context.Background(), options, app.GreetingWorkflowFuture, name)
 	if err != nil {
 		log.Fatalln("unable to complete Workflow", err)
 	}
